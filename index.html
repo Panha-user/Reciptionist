@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipionist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="phou.jpg">
+</head>
+<body>
+    <div id="loadingSpinner" class="loading hidden"></div>
+    <div class="container">
+        <header>
+            <h1>Find Meals For Your Ingredients</h1>
+            <p>True Creativitiy isn't build from tools; true Creativitiyis the <br> essence of the tools.</p>
+         </header>
+         <div class="search-container">
+            <input type="text" name="" id="ingredientInput" placeholder="Enter Ingredient (e.g., Egg)">
+            <button id="searchBtn"><i class="fas fa-search"></i>Search</button>
+         </div>
+         <div id="result" class="result-grid"></div>
+    </div>
+
+    <div id="recipePopup" class="popup hidden">
+        <div class="popup-content">
+            <div class="popup-heading">
+                <span id="closePopup" class="cloose-btn">X</span>
+                <h3 id="recipeTitle">Recipe Titile</h3>
+            </div>
+            <div id="recipeDetails" class="recipe-text"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
